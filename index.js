@@ -25,4 +25,24 @@ console.log(sortedUsers);
 // 5-Increase each user's balance by 10%:
 const updatedUsers = users.map(user => ({...user , balance: user.balance * 1.10}));
 console.log(updatedUsers);
-  
+
+// 6-Check if any user is under 25:
+const hasUserUnder25 = users.some(user => user.age < 25);
+console.log(hasUserUnder25);
+
+// 7-Check if all users have a balance over 2000:
+const allUsersHaveBalanceOver2000 = users.every(user => user.balance > 2000);
+console.log(allUsersHaveBalanceOver2000);
+
+// 8-Get a list of user names:
+const userNames = users.map(user => user.name);
+console.log(userNames);
+
+// 9-Count users with a balance of at least 5000:
+const usersWithHighBalance = users.filter(user => user.balance >= 5000);
+const count = usersWithHighBalance.length;
+console.log(count);
+
+// 10-Remove a user by ID (3):
+const updateUsers = users.filter(user => user.id !== 3);
+console.log(updateUsers);
