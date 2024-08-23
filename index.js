@@ -15,8 +15,8 @@ const totalBalance = users.reduce((accumulator, user) => accumulator + user.bala
 console.log(totalBalance);
 
 // 3-Find a user by email ("charlie@example.com"):
-const user = users.find(user => user.email === "charlie@example.com");
-console.log(user);
+const lost = users.find(user => user.email === "charlie@example.com");
+console.log(lost);
 
 // 4-Sort users by age:
 const sortedUsers = users.sort((a, b) => a.age - b.age);
